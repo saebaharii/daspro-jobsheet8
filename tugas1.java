@@ -8,10 +8,14 @@ public class tugas1 {
         for (int i = 1; i <= n; i++) {
             for (int j = 0; j < i; j++) {
                 System.out.print(j + 1);
+                if (j < i - 1) {
+                    System.out.print(" ");
+                }
                 totalAngkaTercetak++;
             }
             System.out.println();
         }
         System.out.println("Total angka tercetak: " + totalAngkaTercetak);
+        sc.close();
     }
 }
